@@ -1,0 +1,74 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap");
+body {
+    font-family: "Open Sans", sans-serif;
+    padding: 0;
+    margin: 0;
+}
+
+#app {
+    margin: 20px 0;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.create-input {
+    outline: none;
+    border: none;
+    border-bottom: 2px solid #d8c9c9;
+}
+#createNewContact {
+    margin-bottom: 20px;
+}
+
+.btn {
+    background: transparent;
+    border: none;
+}
+.btn-icon {
+    width: 25px;
+}
+
+ul {
+    list-style: none;
+    padding: 20px;
+    margin: 0;
+    box-shadow: 0 0 15px #aaa7a7;
+    border-radius: 20px;
+}
+
+li {
+    display: flex;
+    align-items: center;
+    padding: 5px 0;
+}
+
+li:not(:last-child) {
+    border-bottom: 1px solid #d8c9c9;
+}
+
+.avatar,
+.empty-avatar {
+    border-radius: 50px;
+    width: 75px;
+    height: 75px;
+    object-fit: cover;
+}
+.empty-avatar {
+    background-color: #eae6e6;
+}
+
+.userNameInput,
+.userPhoneInput {
+    text-align: center;
+    width: 150px;
+    margin: 0 5px;
+}
+
+.userNameInput:read-only,
+.userPhoneInput:read-only {
+    outline: none;
+    border: 2px solid transparent;
+}
